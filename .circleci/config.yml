@@ -33,5 +33,3 @@ workflows:
           requires:
             - print_hello
       - print_env_war
-          requires:
-            - print_world
