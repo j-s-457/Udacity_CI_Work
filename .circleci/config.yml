@@ -21,7 +21,10 @@ jobs:
       - image: circleci/node:13.8.0
     steps:
       - checkout
-      - run: echo $Creator
+      - run:
+        name: "echo an environment variable"
+        command:
+          echo $Creater 
 
 # Orchestrate or schedule a set of jobs
 workflows:
@@ -33,4 +36,4 @@ workflows:
       - print_world:
           requires:
             - print_hello
-      - print_env_war
+      - print_env_var
