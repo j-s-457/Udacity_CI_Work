@@ -24,7 +24,7 @@ jobs:
       - run:
         name: "echo an environment variable"
         command:
-          echo $Creater 
+          echo Creater 
 
 # Orchestrate or schedule a set of jobs
 workflows:
