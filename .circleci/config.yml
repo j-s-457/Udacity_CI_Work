@@ -22,9 +22,9 @@ jobs:
     steps:
       - checkout
       - run:
-        name: "echo an environment variable"
-        command:
-          echo Creater 
+          name: "echo an environment variable"
+          command:
+            echo $Creator 
 
 # Orchestrate or schedule a set of jobs
 workflows:
